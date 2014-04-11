@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+#import "TPLAblumViewController.h"
 @interface ViewController ()
 
 @end
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
+    TPLAblumViewController * TPLAblumVC = [[TPLAblumViewController alloc] init];
+    [self presentViewController:TPLAblumVC animated:NO completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

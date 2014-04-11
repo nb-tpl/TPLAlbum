@@ -30,6 +30,7 @@
 		DECA0D4318F6A03700FEA4FE /* TPLMutableTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3918F6A03700FEA4FE /* TPLMutableTextLabel.m */; };
 		DECA0D4418F6A03700FEA4FE /* TPLSegementView.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3B18F6A03700FEA4FE /* TPLSegementView.m */; };
 		DECA0D4518F6A03700FEA4FE /* TPLShowInfoPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3D18F6A03700FEA4FE /* TPLShowInfoPanel.m */; };
+		DECA0D4918F7864300FEA4FE /* TPLAblumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D4818F7864300FEA4FE /* TPLAblumViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		DECA0D3B18F6A03700FEA4FE /* TPLSegementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLSegementView.m; sourceTree = "<group>"; };
 		DECA0D3C18F6A03700FEA4FE /* TPLShowInfoPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLShowInfoPanel.h; sourceTree = "<group>"; };
 		DECA0D3D18F6A03700FEA4FE /* TPLShowInfoPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLShowInfoPanel.m; sourceTree = "<group>"; };
+		DECA0D4718F7864300FEA4FE /* TPLAblumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAblumViewController.h; sourceTree = "<group>"; };
+		DECA0D4818F7864300FEA4FE /* TPLAblumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAblumViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +186,7 @@
 		DECA0D2D18F6A03700FEA4FE /* TPLPackage */ = {
 			isa = PBXGroup;
 			children = (
+				DECA0D4618F780FC00FEA4FE /* TPLAlbum */,
 				DECA0D2E18F6A03700FEA4FE /* TPLAutoChangeLabel.h */,
 				DECA0D2F18F6A03700FEA4FE /* TPLAutoChangeLabel.m */,
 				DECA0D3018F6A03700FEA4FE /* TPLAutoChangeView.h */,
@@ -201,6 +205,15 @@
 				DECA0D3D18F6A03700FEA4FE /* TPLShowInfoPanel.m */,
 			);
 			path = TPLPackage;
+			sourceTree = "<group>";
+		};
+		DECA0D4618F780FC00FEA4FE /* TPLAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				DECA0D4718F7864300FEA4FE /* TPLAblumViewController.h */,
+				DECA0D4818F7864300FEA4FE /* TPLAblumViewController.m */,
+			);
+			path = TPLAlbum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +321,7 @@
 				DECA0D4018F6A03700FEA4FE /* TPLFlexibleView.m in Sources */,
 				DECA0D3E18F6A03700FEA4FE /* TPLAutoChangeLabel.m in Sources */,
 				DECA0D3F18F6A03700FEA4FE /* TPLAutoChangeView.m in Sources */,
+				DECA0D4918F7864300FEA4FE /* TPLAblumViewController.m in Sources */,
 				DECA0D4318F6A03700FEA4FE /* TPLMutableTextLabel.m in Sources */,
 				DECA0D0218F68C1000FEA4FE /* main.m in Sources */,
 				DECA0D4518F6A03700FEA4FE /* TPLShowInfoPanel.m in Sources */,
@@ -385,6 +399,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -424,6 +439,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
