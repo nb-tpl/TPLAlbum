@@ -7,6 +7,7 @@
 //
 
 #import "TPLAutoChangeLabel.h"
+#import "TPLHelpTool.h"
 
 
 @interface TPLAutoChangeLabel ()

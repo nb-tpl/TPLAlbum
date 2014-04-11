@@ -22,6 +22,14 @@
 		DECA0D1A18F68C1000FEA4FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECA0CF918F68C1000FEA4FE /* UIKit.framework */; };
 		DECA0D2218F68C1000FEA4FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DECA0D2018F68C1000FEA4FE /* InfoPlist.strings */; };
 		DECA0D2418F68C1000FEA4FE /* TPLAlbumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D2318F68C1000FEA4FE /* TPLAlbumTests.m */; };
+		DECA0D3E18F6A03700FEA4FE /* TPLAutoChangeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D2F18F6A03700FEA4FE /* TPLAutoChangeLabel.m */; };
+		DECA0D3F18F6A03700FEA4FE /* TPLAutoChangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3118F6A03700FEA4FE /* TPLAutoChangeView.m */; };
+		DECA0D4018F6A03700FEA4FE /* TPLFlexibleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3318F6A03700FEA4FE /* TPLFlexibleView.m */; };
+		DECA0D4118F6A03700FEA4FE /* TPLHelpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3518F6A03700FEA4FE /* TPLHelpTool.m */; };
+		DECA0D4218F6A03700FEA4FE /* TPLMapUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3718F6A03700FEA4FE /* TPLMapUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DECA0D4318F6A03700FEA4FE /* TPLMutableTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3918F6A03700FEA4FE /* TPLMutableTextLabel.m */; };
+		DECA0D4418F6A03700FEA4FE /* TPLSegementView.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3B18F6A03700FEA4FE /* TPLSegementView.m */; };
+		DECA0D4518F6A03700FEA4FE /* TPLShowInfoPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3D18F6A03700FEA4FE /* TPLShowInfoPanel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,22 @@
 		DECA0D1F18F68C1000FEA4FE /* TPLAlbumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TPLAlbumTests-Info.plist"; sourceTree = "<group>"; };
 		DECA0D2118F68C1000FEA4FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DECA0D2318F68C1000FEA4FE /* TPLAlbumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPLAlbumTests.m; sourceTree = "<group>"; };
+		DECA0D2E18F6A03700FEA4FE /* TPLAutoChangeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAutoChangeLabel.h; sourceTree = "<group>"; };
+		DECA0D2F18F6A03700FEA4FE /* TPLAutoChangeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAutoChangeLabel.m; sourceTree = "<group>"; };
+		DECA0D3018F6A03700FEA4FE /* TPLAutoChangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAutoChangeView.h; sourceTree = "<group>"; };
+		DECA0D3118F6A03700FEA4FE /* TPLAutoChangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAutoChangeView.m; sourceTree = "<group>"; };
+		DECA0D3218F6A03700FEA4FE /* TPLFlexibleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLFlexibleView.h; sourceTree = "<group>"; };
+		DECA0D3318F6A03700FEA4FE /* TPLFlexibleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLFlexibleView.m; sourceTree = "<group>"; };
+		DECA0D3418F6A03700FEA4FE /* TPLHelpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLHelpTool.h; sourceTree = "<group>"; };
+		DECA0D3518F6A03700FEA4FE /* TPLHelpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLHelpTool.m; sourceTree = "<group>"; };
+		DECA0D3618F6A03700FEA4FE /* TPLMapUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLMapUtil.h; sourceTree = "<group>"; };
+		DECA0D3718F6A03700FEA4FE /* TPLMapUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLMapUtil.m; sourceTree = "<group>"; };
+		DECA0D3818F6A03700FEA4FE /* TPLMutableTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLMutableTextLabel.h; sourceTree = "<group>"; };
+		DECA0D3918F6A03700FEA4FE /* TPLMutableTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLMutableTextLabel.m; sourceTree = "<group>"; };
+		DECA0D3A18F6A03700FEA4FE /* TPLSegementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLSegementView.h; sourceTree = "<group>"; };
+		DECA0D3B18F6A03700FEA4FE /* TPLSegementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLSegementView.m; sourceTree = "<group>"; };
+		DECA0D3C18F6A03700FEA4FE /* TPLShowInfoPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLShowInfoPanel.h; sourceTree = "<group>"; };
+		DECA0D3D18F6A03700FEA4FE /* TPLShowInfoPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLShowInfoPanel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +138,7 @@
 		DECA0CFB18F68C1000FEA4FE /* TPLAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				DECA0D2D18F6A03700FEA4FE /* TPLPackage */,
 				DECA0D0418F68C1000FEA4FE /* AppDelegate.h */,
 				DECA0D0518F68C1000FEA4FE /* AppDelegate.m */,
 				DECA0D0718F68C1000FEA4FE /* Main_iPhone.storyboard */,
@@ -153,6 +178,29 @@
 				DECA0D2018F68C1000FEA4FE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DECA0D2D18F6A03700FEA4FE /* TPLPackage */ = {
+			isa = PBXGroup;
+			children = (
+				DECA0D2E18F6A03700FEA4FE /* TPLAutoChangeLabel.h */,
+				DECA0D2F18F6A03700FEA4FE /* TPLAutoChangeLabel.m */,
+				DECA0D3018F6A03700FEA4FE /* TPLAutoChangeView.h */,
+				DECA0D3118F6A03700FEA4FE /* TPLAutoChangeView.m */,
+				DECA0D3218F6A03700FEA4FE /* TPLFlexibleView.h */,
+				DECA0D3318F6A03700FEA4FE /* TPLFlexibleView.m */,
+				DECA0D3418F6A03700FEA4FE /* TPLHelpTool.h */,
+				DECA0D3518F6A03700FEA4FE /* TPLHelpTool.m */,
+				DECA0D3618F6A03700FEA4FE /* TPLMapUtil.h */,
+				DECA0D3718F6A03700FEA4FE /* TPLMapUtil.m */,
+				DECA0D3818F6A03700FEA4FE /* TPLMutableTextLabel.h */,
+				DECA0D3918F6A03700FEA4FE /* TPLMutableTextLabel.m */,
+				DECA0D3A18F6A03700FEA4FE /* TPLSegementView.h */,
+				DECA0D3B18F6A03700FEA4FE /* TPLSegementView.m */,
+				DECA0D3C18F6A03700FEA4FE /* TPLShowInfoPanel.h */,
+				DECA0D3D18F6A03700FEA4FE /* TPLShowInfoPanel.m */,
+			);
+			path = TPLPackage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +303,15 @@
 			files = (
 				DECA0D0F18F68C1000FEA4FE /* ViewController.m in Sources */,
 				DECA0D0618F68C1000FEA4FE /* AppDelegate.m in Sources */,
+				DECA0D4118F6A03700FEA4FE /* TPLHelpTool.m in Sources */,
+				DECA0D4218F6A03700FEA4FE /* TPLMapUtil.m in Sources */,
+				DECA0D4018F6A03700FEA4FE /* TPLFlexibleView.m in Sources */,
+				DECA0D3E18F6A03700FEA4FE /* TPLAutoChangeLabel.m in Sources */,
+				DECA0D3F18F6A03700FEA4FE /* TPLAutoChangeView.m in Sources */,
+				DECA0D4318F6A03700FEA4FE /* TPLMutableTextLabel.m in Sources */,
 				DECA0D0218F68C1000FEA4FE /* main.m in Sources */,
+				DECA0D4518F6A03700FEA4FE /* TPLShowInfoPanel.m in Sources */,
+				DECA0D4418F6A03700FEA4FE /* TPLSegementView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +526,7 @@
 				DECA0D2918F68C1000FEA4FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DECA0D2A18F68C1000FEA4FE /* Build configuration list for PBXNativeTarget "TPLAlbumTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +535,7 @@
 				DECA0D2C18F68C1000FEA4FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

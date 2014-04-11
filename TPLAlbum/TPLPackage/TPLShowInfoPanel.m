@@ -12,6 +12,8 @@
 
 #import "TPLMutableTextLabel.h"
 
+#import "TPLHelpTool.h"
+
 @interface TPLShowInfoPanel()
 {
     //数据

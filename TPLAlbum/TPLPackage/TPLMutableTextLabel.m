@@ -7,6 +7,7 @@
 //
 
 #import "TPLMutableTextLabel.h"
+#import "TPLHelpTool.h"
 
 
 
