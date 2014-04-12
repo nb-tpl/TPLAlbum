@@ -6,9 +6,10 @@
 //  Copyright (c) 2014年 NB_TPL. All rights reserved.
 //
 
-#define GroupTable_Width_Default 50
+#define GroupTable_Width_Default 100
 
 #import "TPLAblumViewController.h"
+#import "TPLAlbumCollectionView.h"
 
 #import <AssetsLibrary/AssetsLibrary.h>
 
@@ -22,11 +23,14 @@
     __strong NSMutableArray * _assetsGroups;
 ///视图
     UITableView * _assetsGroupsTable;
+    TPLAlbumCollectionView * _albumCollectionView;
 }
 
 ///视图加载
 //加载左边相册滚动视图
 -(void)loadAssetsGroupsTable;
+//加载右边相册详情视图
+-(void)loadPhotosCollectionView;
 
 @end
 
@@ -65,6 +69,12 @@
     _assetsGroupsTable.dataSource = self;
     [self.view addSubview:_assetsGroupsTable];
 }
+//加载右边相册详情视图
+-(void)loadPhotosCollectionView
+{
+    _albumCollectionView = [[TPLAlbumCollectionView alloc] initWithFrame:CGRectMake(GroupTable_Width_Default, 0, self.view.bounds.size.width - GroupTable_Width_Default, self.view.bounds.size.height)];
+    [self.view addSubview:_albumCollectionView];
+}
 
 - (void)viewDidLoad
 {
@@ -74,6 +84,8 @@
     
     //加载相册滚动选择视图
     [self loadAssetsGroupsTable];
+    //加载右侧相册详情视图
+    [self loadPhotosCollectionView];
     
     
     //枚举相册的Block
@@ -82,6 +94,8 @@
         if (assetsGroup.numberOfAssets > 0)
         {
             [_assetsGroups addObject:assetsGroup];
+        }
+        if (stop) {
             [_assetsGroupsTable reloadData];
         }
         
@@ -103,8 +117,7 @@
 //DataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-//   return  _assetsGroups.count;
-    return 3;
+   return  _assetsGroups.count;
 }
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -112,16 +125,41 @@
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellName];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellName];
+        cell.autoresizesSubviews = YES;
         //相册名字
-        UILabel * groupNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, cell.bounds.size.width, 20)];
+        UILabel * groupNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, cell.bounds.size.height - 20, _assetsGroupsTable.bounds.size.width, 20)];
+//        groupNameLabel.backgroundColor = [UIColor redColor];
+        groupNameLabel.font = [UIFont systemFontOfSize:12.0f];
+        groupNameLabel.textAlignment = NSTextAlignmentCenter;
+        groupNameLabel.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
         groupNameLabel.tag = 1001;
         [cell addSubview:groupNameLabel];
+        //相册图片
+        UIImageView * groupImageView = [[UIImageView alloc] initWithFrame:CGRectMake(2, 2, _assetsGroupsTable.bounds.size.width - 4, groupNameLabel.frame.origin.y - 2)];
+        groupImageView.contentMode = UIViewContentModeScaleAspectFit;
+        groupImageView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+        groupImageView.tag = 1002;
+        [cell addSubview:groupImageView];
     }
     //相册姓名
     UILabel * groupNameLabel = (UILabel*)[cell viewWithTag:1001];
-    groupNameLabel.text = [[_assetsGroups objectAtIndex:indexPath.row]
-                           objectForKey:ALAssetsGroupPropertyName];
+    NSString * name = [[_assetsGroups objectAtIndex:indexPath.row]
+                       valueForProperty:ALAssetsGroupPropertyName];
+    groupNameLabel.text = [NSString stringWithFormat:@"%@(%ld)",name,[[_assetsGroups objectAtIndex:indexPath.row] numberOfAssets]];
+    //相册封面
+    UIImageView * groupImageView = (UIImageView*)[cell viewWithTag:1002];
+    groupImageView.image = [UIImage imageWithCGImage:[[_assetsGroups objectAtIndex:indexPath.row] posterImage]];
     return cell;
+}
+//delegate
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 150;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    _albumCollectionView.assetsGroup = [_assetsGroups objectAtIndex:indexPath.row];
+//    [_albumCollectionView reloadData];
 }
 
 - (void)didReceiveMemoryWarning

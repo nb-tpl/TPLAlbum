@@ -20,10 +20,22 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    self.view.backgroundColor = [UIColor redColor];
     
+    UIButton * albumButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    albumButton.titleLabel.text = @"album";
     
+    [albumButton setTitle:@"album" forState:UIControlStateNormal];
+    albumButton.frame = CGRectMake(0, 0, 100, 100);
+    [albumButton addTarget:self action:@selector(albumClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:albumButton];
+    
+}
+-(void)albumClicked
+{
     TPLAblumViewController * TPLAblumVC = [[TPLAblumViewController alloc] init];
     [self presentViewController:TPLAblumVC animated:NO completion:nil];
+
 }
 
 - (void)didReceiveMemoryWarning

@@ -31,6 +31,8 @@
 		DECA0D4418F6A03700FEA4FE /* TPLSegementView.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3B18F6A03700FEA4FE /* TPLSegementView.m */; };
 		DECA0D4518F6A03700FEA4FE /* TPLShowInfoPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3D18F6A03700FEA4FE /* TPLShowInfoPanel.m */; };
 		DECA0D4918F7864300FEA4FE /* TPLAblumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D4818F7864300FEA4FE /* TPLAblumViewController.m */; };
+		DEFC5D3618F7C3A90002E620 /* TPLAlbumCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFC5D3518F7C3A90002E620 /* TPLAlbumCollectionView.m */; };
+		DEFC5D3918F7E3860002E620 /* TPLAlbumCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFC5D3818F7E3860002E620 /* TPLAlbumCollectionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,10 @@
 		DECA0D3D18F6A03700FEA4FE /* TPLShowInfoPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLShowInfoPanel.m; sourceTree = "<group>"; };
 		DECA0D4718F7864300FEA4FE /* TPLAblumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAblumViewController.h; sourceTree = "<group>"; };
 		DECA0D4818F7864300FEA4FE /* TPLAblumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAblumViewController.m; sourceTree = "<group>"; };
+		DEFC5D3418F7C3A90002E620 /* TPLAlbumCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAlbumCollectionView.h; sourceTree = "<group>"; };
+		DEFC5D3518F7C3A90002E620 /* TPLAlbumCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAlbumCollectionView.m; sourceTree = "<group>"; };
+		DEFC5D3718F7E3860002E620 /* TPLAlbumCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAlbumCollectionCell.h; sourceTree = "<group>"; };
+		DEFC5D3818F7E3860002E620 /* TPLAlbumCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAlbumCollectionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +218,10 @@
 			children = (
 				DECA0D4718F7864300FEA4FE /* TPLAblumViewController.h */,
 				DECA0D4818F7864300FEA4FE /* TPLAblumViewController.m */,
+				DEFC5D3418F7C3A90002E620 /* TPLAlbumCollectionView.h */,
+				DEFC5D3518F7C3A90002E620 /* TPLAlbumCollectionView.m */,
+				DEFC5D3718F7E3860002E620 /* TPLAlbumCollectionCell.h */,
+				DEFC5D3818F7E3860002E620 /* TPLAlbumCollectionCell.m */,
 			);
 			path = TPLAlbum;
 			sourceTree = "<group>";
@@ -319,6 +329,8 @@
 				DECA0D4118F6A03700FEA4FE /* TPLHelpTool.m in Sources */,
 				DECA0D4218F6A03700FEA4FE /* TPLMapUtil.m in Sources */,
 				DECA0D4018F6A03700FEA4FE /* TPLFlexibleView.m in Sources */,
+				DEFC5D3618F7C3A90002E620 /* TPLAlbumCollectionView.m in Sources */,
+				DEFC5D3918F7E3860002E620 /* TPLAlbumCollectionCell.m in Sources */,
 				DECA0D3E18F6A03700FEA4FE /* TPLAutoChangeLabel.m in Sources */,
 				DECA0D3F18F6A03700FEA4FE /* TPLAutoChangeView.m in Sources */,
 				DECA0D4918F7864300FEA4FE /* TPLAblumViewController.m in Sources */,
@@ -416,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
