@@ -56,7 +56,7 @@
     [self.returnBtn addTarget:self action:@selector(backButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     
     UILabel * titleLable = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 44)];
-    titleLable.text = @"秀美图";
+    titleLable.text = @"相册";
     titleLable.textAlignment = NSTextAlignmentCenter;
     titleLable.textColor = [TPLHelpTool getHexColor:@"#161616"];
     titleLable.font = [UIFont boldSystemFontOfSize:20.0f];
@@ -116,7 +116,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
+    self.navigationController.navigationBarHidden = YES;
     //加载头
     [self loadHeadView];
     //加载相册
@@ -149,9 +149,9 @@
 #pragma mark
 #pragma mark           Request
 #pragma mark
-//-(void)postPhotosArray:(NSMutableArray*)photosArray
-//{
-//}
+-(void)postPhotosArray:(NSMutableArray*)photosArray
+{
+}
 ////请求成功
 //-(void)requestFinished:(ASIHTTPRequest *)request
 //{
