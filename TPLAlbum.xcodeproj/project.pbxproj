@@ -22,17 +22,27 @@
 		DECA0D1A18F68C1000FEA4FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECA0CF918F68C1000FEA4FE /* UIKit.framework */; };
 		DECA0D2218F68C1000FEA4FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DECA0D2018F68C1000FEA4FE /* InfoPlist.strings */; };
 		DECA0D2418F68C1000FEA4FE /* TPLAlbumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D2318F68C1000FEA4FE /* TPLAlbumTests.m */; };
-		DECA0D3E18F6A03700FEA4FE /* TPLAutoChangeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D2F18F6A03700FEA4FE /* TPLAutoChangeLabel.m */; };
-		DECA0D3F18F6A03700FEA4FE /* TPLAutoChangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3118F6A03700FEA4FE /* TPLAutoChangeView.m */; };
-		DECA0D4018F6A03700FEA4FE /* TPLFlexibleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3318F6A03700FEA4FE /* TPLFlexibleView.m */; };
-		DECA0D4118F6A03700FEA4FE /* TPLHelpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3518F6A03700FEA4FE /* TPLHelpTool.m */; };
-		DECA0D4218F6A03700FEA4FE /* TPLMapUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3718F6A03700FEA4FE /* TPLMapUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DECA0D4318F6A03700FEA4FE /* TPLMutableTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3918F6A03700FEA4FE /* TPLMutableTextLabel.m */; };
-		DECA0D4418F6A03700FEA4FE /* TPLSegementView.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3B18F6A03700FEA4FE /* TPLSegementView.m */; };
-		DECA0D4518F6A03700FEA4FE /* TPLShowInfoPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D3D18F6A03700FEA4FE /* TPLShowInfoPanel.m */; };
-		DECA0D4918F7864300FEA4FE /* TPLAblumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA0D4818F7864300FEA4FE /* TPLAblumViewController.m */; };
-		DEFC5D3618F7C3A90002E620 /* TPLAlbumCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFC5D3518F7C3A90002E620 /* TPLAlbumCollectionView.m */; };
-		DEFC5D3918F7E3860002E620 /* TPLAlbumCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFC5D3818F7E3860002E620 /* TPLAlbumCollectionCell.m */; };
+		DEF58663191F35C900E87870 /* CommenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF5863A191F35C900E87870 /* CommenViewController.m */; };
+		DEF58664191F35C900E87870 /* TPLChoosePhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF5863C191F35C900E87870 /* TPLChoosePhotosViewController.m */; };
+		DEF58665191F35C900E87870 /* TPLChoosePhotosViewController+TakePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF5863E191F35C900E87870 /* TPLChoosePhotosViewController+TakePhoto.m */; };
+		DEF58666191F35C900E87870 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEF58641191F35C900E87870 /* Icon@2x.png */; };
+		DEF58667191F35C900E87870 /* LaraCroft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEF58642191F35C900E87870 /* LaraCroft@2x.png */; };
+		DEF58668191F35C900E87870 /* overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = DEF58643191F35C900E87870 /* overlay.png */; };
+		DEF58669191F35C900E87870 /* overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEF58644191F35C900E87870 /* overlay@2x.png */; };
+		DEF5866A191F35C900E87870 /* TPLAblumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF58647191F35C900E87870 /* TPLAblumViewController.m */; };
+		DEF5866B191F35C900E87870 /* TPLAlbumCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF58649191F35C900E87870 /* TPLAlbumCollectionCell.m */; };
+		DEF5866C191F35C900E87870 /* TPLAlbumCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF5864B191F35C900E87870 /* TPLAlbumCollectionView.m */; };
+		DEF5866D191F35C900E87870 /* TPLBigPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF5864E191F35C900E87870 /* TPLBigPhoto.m */; };
+		DEF5866E191F35C900E87870 /* TPLBigPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF58650191F35C900E87870 /* TPLBigPhotoView.m */; };
+		DEF5866F191F35C900E87870 /* TPLLookBigPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF58652191F35C900E87870 /* TPLLookBigPhotosViewController.m */; };
+		DEF58670191F35C900E87870 /* TPLAutoChangeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF58654191F35C900E87870 /* TPLAutoChangeLabel.m */; };
+		DEF58671191F35C900E87870 /* TPLAutoChangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF58656191F35C900E87870 /* TPLAutoChangeView.m */; };
+		DEF58672191F35C900E87870 /* TPLFlexibleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF58658191F35C900E87870 /* TPLFlexibleView.m */; };
+		DEF58673191F35C900E87870 /* TPLHelpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF5865A191F35C900E87870 /* TPLHelpTool.m */; };
+		DEF58674191F35C900E87870 /* TPLMapUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF5865C191F35C900E87870 /* TPLMapUtil.m */; };
+		DEF58675191F35C900E87870 /* TPLMutableTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF5865E191F35C900E87870 /* TPLMutableTextLabel.m */; };
+		DEF58676191F35C900E87870 /* TPLSegementView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF58660191F35C900E87870 /* TPLSegementView.m */; };
+		DEF58677191F35C900E87870 /* TPLShowInfoPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF58662191F35C900E87870 /* TPLShowInfoPanel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,28 +76,44 @@
 		DECA0D1F18F68C1000FEA4FE /* TPLAlbumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TPLAlbumTests-Info.plist"; sourceTree = "<group>"; };
 		DECA0D2118F68C1000FEA4FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DECA0D2318F68C1000FEA4FE /* TPLAlbumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPLAlbumTests.m; sourceTree = "<group>"; };
-		DECA0D2E18F6A03700FEA4FE /* TPLAutoChangeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAutoChangeLabel.h; sourceTree = "<group>"; };
-		DECA0D2F18F6A03700FEA4FE /* TPLAutoChangeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAutoChangeLabel.m; sourceTree = "<group>"; };
-		DECA0D3018F6A03700FEA4FE /* TPLAutoChangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAutoChangeView.h; sourceTree = "<group>"; };
-		DECA0D3118F6A03700FEA4FE /* TPLAutoChangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAutoChangeView.m; sourceTree = "<group>"; };
-		DECA0D3218F6A03700FEA4FE /* TPLFlexibleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLFlexibleView.h; sourceTree = "<group>"; };
-		DECA0D3318F6A03700FEA4FE /* TPLFlexibleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLFlexibleView.m; sourceTree = "<group>"; };
-		DECA0D3418F6A03700FEA4FE /* TPLHelpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLHelpTool.h; sourceTree = "<group>"; };
-		DECA0D3518F6A03700FEA4FE /* TPLHelpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLHelpTool.m; sourceTree = "<group>"; };
-		DECA0D3618F6A03700FEA4FE /* TPLMapUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLMapUtil.h; sourceTree = "<group>"; };
-		DECA0D3718F6A03700FEA4FE /* TPLMapUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLMapUtil.m; sourceTree = "<group>"; };
-		DECA0D3818F6A03700FEA4FE /* TPLMutableTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLMutableTextLabel.h; sourceTree = "<group>"; };
-		DECA0D3918F6A03700FEA4FE /* TPLMutableTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLMutableTextLabel.m; sourceTree = "<group>"; };
-		DECA0D3A18F6A03700FEA4FE /* TPLSegementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLSegementView.h; sourceTree = "<group>"; };
-		DECA0D3B18F6A03700FEA4FE /* TPLSegementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLSegementView.m; sourceTree = "<group>"; };
-		DECA0D3C18F6A03700FEA4FE /* TPLShowInfoPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLShowInfoPanel.h; sourceTree = "<group>"; };
-		DECA0D3D18F6A03700FEA4FE /* TPLShowInfoPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLShowInfoPanel.m; sourceTree = "<group>"; };
-		DECA0D4718F7864300FEA4FE /* TPLAblumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAblumViewController.h; sourceTree = "<group>"; };
-		DECA0D4818F7864300FEA4FE /* TPLAblumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAblumViewController.m; sourceTree = "<group>"; };
-		DEFC5D3418F7C3A90002E620 /* TPLAlbumCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAlbumCollectionView.h; sourceTree = "<group>"; };
-		DEFC5D3518F7C3A90002E620 /* TPLAlbumCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAlbumCollectionView.m; sourceTree = "<group>"; };
-		DEFC5D3718F7E3860002E620 /* TPLAlbumCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAlbumCollectionCell.h; sourceTree = "<group>"; };
-		DEFC5D3818F7E3860002E620 /* TPLAlbumCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAlbumCollectionCell.m; sourceTree = "<group>"; };
+		DEF58639191F35C900E87870 /* CommenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommenViewController.h; sourceTree = "<group>"; };
+		DEF5863A191F35C900E87870 /* CommenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommenViewController.m; sourceTree = "<group>"; };
+		DEF5863B191F35C900E87870 /* TPLChoosePhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLChoosePhotosViewController.h; sourceTree = "<group>"; };
+		DEF5863C191F35C900E87870 /* TPLChoosePhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLChoosePhotosViewController.m; sourceTree = "<group>"; };
+		DEF5863D191F35C900E87870 /* TPLChoosePhotosViewController+TakePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TPLChoosePhotosViewController+TakePhoto.h"; sourceTree = "<group>"; };
+		DEF5863E191F35C900E87870 /* TPLChoosePhotosViewController+TakePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TPLChoosePhotosViewController+TakePhoto.m"; sourceTree = "<group>"; };
+		DEF58641191F35C900E87870 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		DEF58642191F35C900E87870 /* LaraCroft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaraCroft@2x.png"; sourceTree = "<group>"; };
+		DEF58643191F35C900E87870 /* overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay.png; sourceTree = "<group>"; };
+		DEF58644191F35C900E87870 /* overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay@2x.png"; sourceTree = "<group>"; };
+		DEF58646191F35C900E87870 /* TPLAblumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAblumViewController.h; sourceTree = "<group>"; };
+		DEF58647191F35C900E87870 /* TPLAblumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAblumViewController.m; sourceTree = "<group>"; };
+		DEF58648191F35C900E87870 /* TPLAlbumCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAlbumCollectionCell.h; sourceTree = "<group>"; };
+		DEF58649191F35C900E87870 /* TPLAlbumCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAlbumCollectionCell.m; sourceTree = "<group>"; };
+		DEF5864A191F35C900E87870 /* TPLAlbumCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAlbumCollectionView.h; sourceTree = "<group>"; };
+		DEF5864B191F35C900E87870 /* TPLAlbumCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAlbumCollectionView.m; sourceTree = "<group>"; };
+		DEF5864D191F35C900E87870 /* TPLBigPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLBigPhoto.h; sourceTree = "<group>"; };
+		DEF5864E191F35C900E87870 /* TPLBigPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLBigPhoto.m; sourceTree = "<group>"; };
+		DEF5864F191F35C900E87870 /* TPLBigPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLBigPhotoView.h; sourceTree = "<group>"; };
+		DEF58650191F35C900E87870 /* TPLBigPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLBigPhotoView.m; sourceTree = "<group>"; };
+		DEF58651191F35C900E87870 /* TPLLookBigPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLLookBigPhotosViewController.h; sourceTree = "<group>"; };
+		DEF58652191F35C900E87870 /* TPLLookBigPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLLookBigPhotosViewController.m; sourceTree = "<group>"; };
+		DEF58653191F35C900E87870 /* TPLAutoChangeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAutoChangeLabel.h; sourceTree = "<group>"; };
+		DEF58654191F35C900E87870 /* TPLAutoChangeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAutoChangeLabel.m; sourceTree = "<group>"; };
+		DEF58655191F35C900E87870 /* TPLAutoChangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLAutoChangeView.h; sourceTree = "<group>"; };
+		DEF58656191F35C900E87870 /* TPLAutoChangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLAutoChangeView.m; sourceTree = "<group>"; };
+		DEF58657191F35C900E87870 /* TPLFlexibleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLFlexibleView.h; sourceTree = "<group>"; };
+		DEF58658191F35C900E87870 /* TPLFlexibleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLFlexibleView.m; sourceTree = "<group>"; };
+		DEF58659191F35C900E87870 /* TPLHelpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLHelpTool.h; sourceTree = "<group>"; };
+		DEF5865A191F35C900E87870 /* TPLHelpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLHelpTool.m; sourceTree = "<group>"; };
+		DEF5865B191F35C900E87870 /* TPLMapUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLMapUtil.h; sourceTree = "<group>"; };
+		DEF5865C191F35C900E87870 /* TPLMapUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLMapUtil.m; sourceTree = "<group>"; };
+		DEF5865D191F35C900E87870 /* TPLMutableTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLMutableTextLabel.h; sourceTree = "<group>"; };
+		DEF5865E191F35C900E87870 /* TPLMutableTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLMutableTextLabel.m; sourceTree = "<group>"; };
+		DEF5865F191F35C900E87870 /* TPLSegementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLSegementView.h; sourceTree = "<group>"; };
+		DEF58660191F35C900E87870 /* TPLSegementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLSegementView.m; sourceTree = "<group>"; };
+		DEF58661191F35C900E87870 /* TPLShowInfoPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLShowInfoPanel.h; sourceTree = "<group>"; };
+		DEF58662191F35C900E87870 /* TPLShowInfoPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLShowInfoPanel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +173,13 @@
 		DECA0CFB18F68C1000FEA4FE /* TPLAlbum */ = {
 			isa = PBXGroup;
 			children = (
-				DECA0D2D18F6A03700FEA4FE /* TPLPackage */,
+				DEF58639191F35C900E87870 /* CommenViewController.h */,
+				DEF5863A191F35C900E87870 /* CommenViewController.m */,
+				DEF5863B191F35C900E87870 /* TPLChoosePhotosViewController.h */,
+				DEF5863C191F35C900E87870 /* TPLChoosePhotosViewController.m */,
+				DEF5863D191F35C900E87870 /* TPLChoosePhotosViewController+TakePhoto.h */,
+				DEF5863E191F35C900E87870 /* TPLChoosePhotosViewController+TakePhoto.m */,
+				DEF5863F191F35C900E87870 /* TPLPackage */,
 				DECA0D0418F68C1000FEA4FE /* AppDelegate.h */,
 				DECA0D0518F68C1000FEA4FE /* AppDelegate.m */,
 				DECA0D0718F68C1000FEA4FE /* Main_iPhone.storyboard */,
@@ -189,41 +221,67 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DECA0D2D18F6A03700FEA4FE /* TPLPackage */ = {
+		DEF5863F191F35C900E87870 /* TPLPackage */ = {
 			isa = PBXGroup;
 			children = (
-				DECA0D4618F780FC00FEA4FE /* TPLAlbum */,
-				DECA0D2E18F6A03700FEA4FE /* TPLAutoChangeLabel.h */,
-				DECA0D2F18F6A03700FEA4FE /* TPLAutoChangeLabel.m */,
-				DECA0D3018F6A03700FEA4FE /* TPLAutoChangeView.h */,
-				DECA0D3118F6A03700FEA4FE /* TPLAutoChangeView.m */,
-				DECA0D3218F6A03700FEA4FE /* TPLFlexibleView.h */,
-				DECA0D3318F6A03700FEA4FE /* TPLFlexibleView.m */,
-				DECA0D3418F6A03700FEA4FE /* TPLHelpTool.h */,
-				DECA0D3518F6A03700FEA4FE /* TPLHelpTool.m */,
-				DECA0D3618F6A03700FEA4FE /* TPLMapUtil.h */,
-				DECA0D3718F6A03700FEA4FE /* TPLMapUtil.m */,
-				DECA0D3818F6A03700FEA4FE /* TPLMutableTextLabel.h */,
-				DECA0D3918F6A03700FEA4FE /* TPLMutableTextLabel.m */,
-				DECA0D3A18F6A03700FEA4FE /* TPLSegementView.h */,
-				DECA0D3B18F6A03700FEA4FE /* TPLSegementView.m */,
-				DECA0D3C18F6A03700FEA4FE /* TPLShowInfoPanel.h */,
-				DECA0D3D18F6A03700FEA4FE /* TPLShowInfoPanel.m */,
+				DEF58640191F35C900E87870 /* image */,
+				DEF58645191F35C900E87870 /* TPLAlbum */,
+				DEF58653191F35C900E87870 /* TPLAutoChangeLabel.h */,
+				DEF58654191F35C900E87870 /* TPLAutoChangeLabel.m */,
+				DEF58655191F35C900E87870 /* TPLAutoChangeView.h */,
+				DEF58656191F35C900E87870 /* TPLAutoChangeView.m */,
+				DEF58657191F35C900E87870 /* TPLFlexibleView.h */,
+				DEF58658191F35C900E87870 /* TPLFlexibleView.m */,
+				DEF58659191F35C900E87870 /* TPLHelpTool.h */,
+				DEF5865A191F35C900E87870 /* TPLHelpTool.m */,
+				DEF5865B191F35C900E87870 /* TPLMapUtil.h */,
+				DEF5865C191F35C900E87870 /* TPLMapUtil.m */,
+				DEF5865D191F35C900E87870 /* TPLMutableTextLabel.h */,
+				DEF5865E191F35C900E87870 /* TPLMutableTextLabel.m */,
+				DEF5865F191F35C900E87870 /* TPLSegementView.h */,
+				DEF58660191F35C900E87870 /* TPLSegementView.m */,
+				DEF58661191F35C900E87870 /* TPLShowInfoPanel.h */,
+				DEF58662191F35C900E87870 /* TPLShowInfoPanel.m */,
 			);
 			path = TPLPackage;
 			sourceTree = "<group>";
 		};
-		DECA0D4618F780FC00FEA4FE /* TPLAlbum */ = {
+		DEF58640191F35C900E87870 /* image */ = {
 			isa = PBXGroup;
 			children = (
-				DECA0D4718F7864300FEA4FE /* TPLAblumViewController.h */,
-				DECA0D4818F7864300FEA4FE /* TPLAblumViewController.m */,
-				DEFC5D3418F7C3A90002E620 /* TPLAlbumCollectionView.h */,
-				DEFC5D3518F7C3A90002E620 /* TPLAlbumCollectionView.m */,
-				DEFC5D3718F7E3860002E620 /* TPLAlbumCollectionCell.h */,
-				DEFC5D3818F7E3860002E620 /* TPLAlbumCollectionCell.m */,
+				DEF58641191F35C900E87870 /* Icon@2x.png */,
+				DEF58642191F35C900E87870 /* LaraCroft@2x.png */,
+				DEF58643191F35C900E87870 /* overlay.png */,
+				DEF58644191F35C900E87870 /* overlay@2x.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		DEF58645191F35C900E87870 /* TPLAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				DEF58646191F35C900E87870 /* TPLAblumViewController.h */,
+				DEF58647191F35C900E87870 /* TPLAblumViewController.m */,
+				DEF58648191F35C900E87870 /* TPLAlbumCollectionCell.h */,
+				DEF58649191F35C900E87870 /* TPLAlbumCollectionCell.m */,
+				DEF5864A191F35C900E87870 /* TPLAlbumCollectionView.h */,
+				DEF5864B191F35C900E87870 /* TPLAlbumCollectionView.m */,
+				DEF5864C191F35C900E87870 /* TPLLookBigPhotos */,
 			);
 			path = TPLAlbum;
+			sourceTree = "<group>";
+		};
+		DEF5864C191F35C900E87870 /* TPLLookBigPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				DEF5864D191F35C900E87870 /* TPLBigPhoto.h */,
+				DEF5864E191F35C900E87870 /* TPLBigPhoto.m */,
+				DEF5864F191F35C900E87870 /* TPLBigPhotoView.h */,
+				DEF58650191F35C900E87870 /* TPLBigPhotoView.m */,
+				DEF58651191F35C900E87870 /* TPLLookBigPhotosViewController.h */,
+				DEF58652191F35C900E87870 /* TPLLookBigPhotosViewController.m */,
+			);
+			path = TPLLookBigPhotos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +364,10 @@
 				DECA0D1118F68C1000FEA4FE /* Images.xcassets in Resources */,
 				DECA0D0918F68C1000FEA4FE /* Main_iPhone.storyboard in Resources */,
 				DECA0D0018F68C1000FEA4FE /* InfoPlist.strings in Resources */,
+				DEF58666191F35C900E87870 /* Icon@2x.png in Resources */,
+				DEF58669191F35C900E87870 /* overlay@2x.png in Resources */,
+				DEF58668191F35C900E87870 /* overlay.png in Resources */,
+				DEF58667191F35C900E87870 /* LaraCroft@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,20 +386,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF5866E191F35C900E87870 /* TPLBigPhotoView.m in Sources */,
+				DEF58676191F35C900E87870 /* TPLSegementView.m in Sources */,
+				DEF5866C191F35C900E87870 /* TPLAlbumCollectionView.m in Sources */,
+				DEF58671191F35C900E87870 /* TPLAutoChangeView.m in Sources */,
+				DEF5866B191F35C900E87870 /* TPLAlbumCollectionCell.m in Sources */,
 				DECA0D0F18F68C1000FEA4FE /* ViewController.m in Sources */,
+				DEF58677191F35C900E87870 /* TPLShowInfoPanel.m in Sources */,
 				DECA0D0618F68C1000FEA4FE /* AppDelegate.m in Sources */,
-				DECA0D4118F6A03700FEA4FE /* TPLHelpTool.m in Sources */,
-				DECA0D4218F6A03700FEA4FE /* TPLMapUtil.m in Sources */,
-				DECA0D4018F6A03700FEA4FE /* TPLFlexibleView.m in Sources */,
-				DEFC5D3618F7C3A90002E620 /* TPLAlbumCollectionView.m in Sources */,
-				DEFC5D3918F7E3860002E620 /* TPLAlbumCollectionCell.m in Sources */,
-				DECA0D3E18F6A03700FEA4FE /* TPLAutoChangeLabel.m in Sources */,
-				DECA0D3F18F6A03700FEA4FE /* TPLAutoChangeView.m in Sources */,
-				DECA0D4918F7864300FEA4FE /* TPLAblumViewController.m in Sources */,
-				DECA0D4318F6A03700FEA4FE /* TPLMutableTextLabel.m in Sources */,
+				DEF5866D191F35C900E87870 /* TPLBigPhoto.m in Sources */,
+				DEF58675191F35C900E87870 /* TPLMutableTextLabel.m in Sources */,
 				DECA0D0218F68C1000FEA4FE /* main.m in Sources */,
-				DECA0D4518F6A03700FEA4FE /* TPLShowInfoPanel.m in Sources */,
-				DECA0D4418F6A03700FEA4FE /* TPLSegementView.m in Sources */,
+				DEF58665191F35C900E87870 /* TPLChoosePhotosViewController+TakePhoto.m in Sources */,
+				DEF5866F191F35C900E87870 /* TPLLookBigPhotosViewController.m in Sources */,
+				DEF58670191F35C900E87870 /* TPLAutoChangeLabel.m in Sources */,
+				DEF5866A191F35C900E87870 /* TPLAblumViewController.m in Sources */,
+				DEF58663191F35C900E87870 /* CommenViewController.m in Sources */,
+				DEF58664191F35C900E87870 /* TPLChoosePhotosViewController.m in Sources */,
+				DEF58672191F35C900E87870 /* TPLFlexibleView.m in Sources */,
+				DEF58673191F35C900E87870 /* TPLHelpTool.m in Sources */,
+				DEF58674191F35C900E87870 /* TPLMapUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
