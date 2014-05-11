@@ -12,6 +12,6 @@
 
 
 //上传图片
--(void)postPhotosArray:(NSMutableArray*)photosArray;
+//-(void)postPhotosArray:(NSMutableArray*)photosArray;
 
 @end

@@ -262,7 +262,7 @@
                             experssionStr = [infoString substringWithRange:NSMakeRange(1, j-1)];
                             
                             //如果有这个表情
-                            NSString * faceID = [[TPLCommon expressionDict] objectForKey:experssionStr];
+                            NSString * faceID = [[TPLHelpTool expressionDict] objectForKey:experssionStr];
                             if (faceID != nil)
                             {
                                 UIImageView * faceImageView = [[UIImageView alloc] initWithFrame:CGRectMake(x, y, _lineHeight, _lineHeight)];

@@ -12,18 +12,20 @@
 
 #import "TPLChoosePhotosViewController+TakePhoto.h"
 
+#import "TPLHelpTool.h"
 
-#import "ASIFormDataRequest.h"
+
+//#import "ASIFormDataRequest.h"
 
 
 #define OKButton_Tag 577
-@interface TPLChoosePhotosViewController ()<ASIHTTPRequestDelegate>
+@interface TPLChoosePhotosViewController ()//<ASIHTTPRequestDelegate>
 {
 ///数据
     //多选相册控制器
     TPLAblumViewController * _ablumVC;
 ///视图
-    MBProgressHUD * _hud;
+//    MBProgressHUD * _hud;
 }
 
 //加载头部
@@ -89,6 +91,7 @@
 //    [okButton setTitleColor:[TPLHelpTool getHexColor:@"ff5b00"] forState:UIControlStateNormal];
     [okButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     okButton.frame = CGRectMake(_ablumVC.view.frame.origin.x, _ablumVC.view.frame.origin.y + _ablumVC.view.frame.size.height, 320, 44);
+    okButton.userInteractionEnabled = NO;
     okButton.tag = OKButton_Tag;
     okButton.backgroundColor = [UIColor whiteColor];
     [okButton addTarget:self action:@selector(okButtonClicked) forControlEvents:UIControlEventTouchUpInside];
@@ -146,70 +149,21 @@
 #pragma mark
 #pragma mark           Request
 #pragma mark
--(void)postPhotosArray:(NSMutableArray*)photosArray
-{
-
-    
-    NSDictionary * logReturnDic = [ACommenTool sharedInstance].logReturnDic;
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@api/loginAfter/InsertAlbum?uuid=%@",HOST_COM,[logReturnDic objectForKey:@"uuid"]]];
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-//    [request setPostValue:[logReturnDic objectForKey:@"uuid"] forKey:@"uuid"];
-    for (int i = 0; i < photosArray.count; i++)
-    {
-        UIImage * photo = [photosArray objectAtIndex:i];
-        
-        NSData * photoData = UIImageJPEGRepresentation(photo, 0.3);
-        NSString * nameString = [NSString stringWithFormat:@"pic_url%d",i+1];
-//        NSLog(@"ALAssetPropertyAssetURL = %@",[asset valueForProperty:ALAssetPropertyAssetURL]);
-//        NSLog(@"ALAssetPropertyURLs = %@",[asset valueForProperty:ALAssetPropertyURLs]);
-//        NSLog(@"ALAssetPropertyDate = %@",[asset valueForProperty:ALAssetTypePhoto]);
-//        NSLog(@"ALAssetTypePhoto = %@",[asset valueForProperty:ALAssetTypePhoto]);
-//        NSLog(@"ALAssetTypeUnknown = %@",[asset valueForProperty:ALAssetTypeUnknown]);
-//        NSLog(@"ALAssetPropertyLocation = %@",[asset valueForProperty:ALAssetPropertyLocation]);
-//        NSLog(@"ALAssetPropertyType = %@",[asset valueForProperty:ALAssetPropertyType]);
-//        NSLog(@"ALErrorInvalidProperty = %@",[asset valueForProperty:ALErrorInvalidProperty]);
-        
-//        [request addData:photoData withFileName:nameString andContentType:@"image/pjepg" forKey:nameString];
-        [request addData:photoData forKey:nameString];
-    }
-    [request buildPostBody];
-    [request setDelegate:self];
-    [request setTimeOutSeconds:30.0f];
-    [request startAsynchronous];
-    
-
-}
-//请求成功
--(void)requestFinished:(ASIHTTPRequest *)request
-{
-    _hud.hidden = YES;
-        NSDictionary * dict = [request.responseString JSONValue];
-        //判断
-        if (dict != nil &&[[dict objectForKey:@"r_e"] intValue] == 0)//成功
-        {
-            //提示警告框成功...
-            [TPLCommon showSignInfoWithTitle:@"" detailInfo:NSLocalizedString(@"UpLoadOK", nil) inView:self.view];
-        }
-        else if(dict != nil)
-        {
-            //提示警告框失败...
-            [TPLCommon showSignInfoWithTitle:@"" detailInfo:[dict objectForKey:@"r_c"] inView:self.view];
- 
-        }
-        else
-        {
-            //提示警告框失败...
-            [TPLCommon showSignInfoWithTitle:@"" detailInfo:@"上传失败" inView:self.view];
-        }
-}
-//请求失败
--(void)requestFailed:(ASIHTTPRequest *)request
-{
-    _hud.hidden = YES;
-    
-    //提示警告框失败...
-    [TPLCommon showSignInfoWithTitle:NSLocalizedString(@"warmSign", nil) detailInfo:NSLocalizedString(@"checkNetWorking", nil) inView:self.view];
-}
+//-(void)postPhotosArray:(NSMutableArray*)photosArray
+//{
+//}
+////请求成功
+//-(void)requestFinished:(ASIHTTPRequest *)request
+//{
+//}
+////请求失败
+//-(void)requestFailed:(ASIHTTPRequest *)request
+//{
+//    _hud.hidden = YES;
+//    
+//    //提示警告框失败...
+//    [TPLCommon showSignInfoWithTitle:NSLocalizedString(@"warmSign", nil) detailInfo:NSLocalizedString(@"checkNetWorking", nil) inView:self.view];
+//}
 #pragma mark
 #pragma mark           dealData
 #pragma mark
@@ -252,14 +206,18 @@
 //确定按钮
 -(void)okButtonClicked
 {
-    _hud = [[MBProgressHUD alloc] initWithView:self.view];
-    _hud.dimBackground = YES;
-    [self.view addSubview:_hud];
-    _hud.detailsLabelText = @"正在上传...";
-    [_hud show:YES];
-    
+//    _hud = [[MBProgressHUD alloc] initWithView:self.view];
+//    _hud.dimBackground = YES;
+//    [self.view addSubview:_hud];
+//    _hud.detailsLabelText = @"正在上传...";
+//    [_hud show:YES];
+//    
     NSMutableArray * photosArray = [self dealChoosePhotos];
-    [self postPhotosArray:photosArray];
+    
+    
+    UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"是否上传%d张图片",photosArray.count] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+    [alertView show];
+//    [self postPhotosArray:photosArray];
 }
 
 

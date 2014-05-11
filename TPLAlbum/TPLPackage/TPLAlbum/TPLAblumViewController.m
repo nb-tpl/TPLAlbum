@@ -9,6 +9,7 @@
 #define GroupTable_Width_Default 100
 
 #import "TPLAblumViewController.h"
+#import "TPLHelpTool.h"
 @interface TPLAblumViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
 ///查询相册Block

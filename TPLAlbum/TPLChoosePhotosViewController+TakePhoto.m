@@ -8,6 +8,8 @@
 
 #import "TPLChoosePhotosViewController+TakePhoto.h"
 
+#import "TPLHelpTool.h"
+
 @implementation TPLChoosePhotosViewController (TakePhoto)
 
 
@@ -34,7 +36,7 @@
     NSLog(@"%d",image.imageOrientation);
     NSMutableArray * array = [[NSMutableArray alloc] initWithCapacity:0];
     [array addObject:image];
-    [self postPhotosArray:array];
+//    [self postPhotosArray:array];
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }

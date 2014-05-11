@@ -21,8 +21,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(AReciveSucess:) name:@"requestSucess" object:nil];
-         [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(AReciveFail:) name:@"requestFail" object:nil];
+
     }
     return self;
 }
@@ -35,7 +34,7 @@
     // Do any additional setup after loading the view.
     //创建导航条
     navBg=[[UIImageView alloc]initWithFrame:CGRectMake(0,0,320,44)];
-    navBg.image=[UIImage imageNamed:NSLocalizedString(@"ARegNavBg", @"")];
+    navBg.image=[UIImage imageNamed:@"u_bg_04.png"];
     [self.view addSubview:navBg];
     //如果设备的系统的7.0以上
     if([[[UIDevice currentDevice]systemVersion]floatValue]>=7.0f){
@@ -53,7 +52,7 @@
     returnBtn.frame=CGRectMake(0,0,50,44);
     returnBtn.backgroundColor=[UIColor clearColor];
     UIImageView *returnIg=[[UIImageView alloc]initWithFrame:CGRectMake(15,15,15,15)];
-    returnIg.image=[UIImage imageNamed:NSLocalizedString(@"ARegReturn", nil)];
+    returnIg.image=[UIImage imageNamed:@"u_ico_03.png"];
     [returnBtn addSubview:returnIg];
     [self.view addSubview:returnBtn];
 }
@@ -63,18 +62,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//接收通知成功
--(void)AReciveSucess:(NSNotification *)note{
-    
-}
-////接收通知失败
--(void)AReciveFail:(NSNotification *)note{
-    
-}
 -(void)dealloc{
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"requestSucess" object:nil];
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"requestFail" object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 /*
 #pragma mark - Navigation

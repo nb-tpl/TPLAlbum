@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 
-#import "TPLAblumViewController.h"
+//#import "TPLAblumViewController.h"
+#import "TPLChoosePhotosViewController.h"
 @interface ViewController ()
 
 @end
@@ -33,8 +34,9 @@
 }
 -(void)albumClicked
 {
-    TPLAblumViewController * TPLAblumVC = [[TPLAblumViewController alloc] init];
-    [self presentViewController:TPLAblumVC animated:NO completion:nil];
+    TPLChoosePhotosViewController * tplChoosePhotoVC = [[TPLChoosePhotosViewController alloc] init];
+    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:tplChoosePhotoVC];
+    [self presentViewController:nav animated:YES completion:nil];
 
 }
 

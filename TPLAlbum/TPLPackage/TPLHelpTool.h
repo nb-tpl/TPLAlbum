@@ -107,6 +107,19 @@
 
 
 #pragma mark
+#pragma mark           about Expression
+#pragma mark
+//返回表情数值字典
++(NSDictionary * )expressionDict;
+
+//返回表情数值数组
++(NSArray*)expressionArray;
+
+//返回表情名字数组
++(NSArray*)expressionNameArray;
+
+
+#pragma mark
 #pragma mark---------------HNUtil
 
 

@@ -10,11 +10,6 @@
 
 @interface CommenViewController : UIViewController
 
-//数据接收成功
--(void)AReciveSucess:(NSNotification *)note;
-//数据接收失败
--(void)AReciveFail:(NSNotification *)note;
-
 @property(nonatomic,retain)UIImageView *navBg;
 @property(nonatomic,retain)UIButton *returnBtn;
 @property(nonatomic,retain)UILabel *navLbl;
